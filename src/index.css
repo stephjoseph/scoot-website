@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:ital,wght@0,700;1,700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-h1 {
+    @apply font-['Space_Mono'] text-[3.5rem] leading-[3.5rem] tracking-[-2.5px];
+  }
+
+  .font-h2 {
+    @apply font-['Space_Mono'] text-5xl leading-[3rem] tracking-[-2.14px];
+  }
+
+  .font-h3 {
+    @apply font-['Space_Mono'] text-[2.5rem] leading-[3rem] tracking-[-1.79px];
+  }
+
+  .font-h4 {
+    @apply font-['Space_Mono'] text-2xl leading-[1.75rem] tracking-[-1.07px];
+  }
+
+  .font-body {
+    @apply font-['Lexend_Deca'] text-[0.938rem] leading-[1.563rem];
+  }
+
+  .btn {
+    @apply font-body flex h-[3.313rem] w-[11.25rem] items-center justify-center border-none bg-yellow font-['Space_Mono'] text-white transition-colors duration-300;
+  }
+  .btn:hover,
+  .btn:active {
+    @apply border-[3px] border-solid border-yellow bg-transparent text-yellow;
+  }
+
+  header {
+    background: url("./assets/images/home-hero-mobile.jpg") no-repeat center
+      center;
+    background-size: cover;
+  }
 }
