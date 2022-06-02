@@ -38,7 +38,7 @@ const FAQ = () => {
                   className="flex items-center justify-between"
                   onClick={() => toggle(i)}
                 >
-                  <h4 className="font-h4 text-lg leading-6 tracking-[-0.8px] text-dark-navy">
+                  <h4 className="font-h4 max-w-[13.688rem] text-lg leading-6 tracking-[-0.8px] text-dark-navy">
                     {item.question}
                   </h4>
                   <div
@@ -67,7 +67,7 @@ const FAQ = () => {
                   className="flex items-center justify-between"
                   onClick={() => toggle2(i)}
                 >
-                  <h4 className="font-h4 text-lg leading-6 tracking-[-0.8px] text-dark-navy">
+                  <h4 className="font-h4 max-w-[13.688rem] text-lg leading-6 tracking-[-0.8px] text-dark-navy">
                     {item.question}
                   </h4>
                   <div
