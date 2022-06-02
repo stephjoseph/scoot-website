@@ -37,8 +37,14 @@
     @apply border-[3px] border-solid border-yellow bg-transparent text-yellow;
   }
 
-  header {
+  #home header {
     background: url("./assets/images/home-hero-mobile.jpg") no-repeat center
+      center;
+    background-size: cover;
+  }
+
+  #about header {
+    background: url("./assets/images/about-hero-mobile.jpg") no-repeat center
       center;
     background-size: cover;
   }
