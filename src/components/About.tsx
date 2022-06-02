@@ -3,7 +3,7 @@ import Main from "./about/Main";
 
 const About = () => {
   return (
-    <div id="about" className="flex w-full flex-col items-center">
+    <div id="about" className="mb-[7.5rem] flex w-full flex-col items-center">
       <Header />
       <Main />
     </div>
