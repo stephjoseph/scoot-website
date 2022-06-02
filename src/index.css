@@ -21,6 +21,10 @@
     @apply font-['Space_Mono'] text-2xl leading-[1.75rem] tracking-[-1.07px];
   }
 
+  .font-h5 {
+    @apply font-['Space_Mono'] text-[1.25rem] leading-[1.75rem] tracking-[-0.89px];
+  }
+
   .font-body {
     @apply font-['Lexend_Deca'] text-[0.938rem] leading-[1.563rem];
   }
@@ -37,5 +41,12 @@
     background: url("./assets/images/home-hero-mobile.jpg") no-repeat center
       center;
     background-size: cover;
+  }
+
+  #CTA {
+    background-image: url("./assets/patterns/semi-circles.svg");
+    background-repeat: no-repeat;
+    background-position: -37.938rem bottom;
+    background-size: 72.063rem 10.844rem;
   }
 }
