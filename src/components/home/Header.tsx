@@ -2,7 +2,7 @@ import rightArrow from "../../assets/patterns/right-arrow.svg";
 
 const Header = () => {
   return (
-    <header className="relative flex items-center justify-center pt-[7.188rem] pb-[11.188rem] text-center">
+    <header className="relative mb-[7.5rem] flex w-full items-center justify-center pt-[7.188rem] pb-[11.188rem] text-center">
       <div className="flex max-w-[19.438rem] flex-col items-center gap-8">
         <div className="flex flex-col items-center gap-6">
           <h1 className="font-h3 text-white">Scooter sharing made simple</h1>
