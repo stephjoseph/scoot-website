@@ -56,3 +56,13 @@
     background-size: 72.063rem 10.844rem;
   }
 }
+
+@layer utilities {
+  .answer {
+    @apply font-body max-h-0 overflow-hidden text-dark-navy opacity-0 transition-[max-height,_padding,_opacity] duration-[0.3s,_0.3s,_0.3s] ease-out;
+  }
+
+  .answer.show {
+    @apply h-auto max-h-[9999px] pt-6 opacity-100 transition-[max-height,_padding,_opacity] duration-[2s,_0.3s,_0.3s] ease-in;
+  }
+}
