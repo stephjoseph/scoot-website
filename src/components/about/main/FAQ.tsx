@@ -38,13 +38,13 @@ const FAQ = () => {
                   className="flex items-center justify-between"
                   onClick={() => toggle(i)}
                 >
-                  <h4 className="font-h4 max-w-[13.688rem] text-lg leading-6 tracking-[-0.8px] text-dark-navy">
+                  <h4 className="font-h4 max-w-[13.688rem] cursor-pointer  text-lg leading-6 tracking-[-0.8px] text-dark-navy">
                     {item.question}
                   </h4>
                   <div
                     className={`${
                       selected === i ? "rotate-180" : ""
-                    } transition-[transform] duration-300 ease-in`}
+                    } cursor-pointer transition-[transform] duration-300 ease-in`}
                   >
                     <img src={chevronIcon} alt="" />
                   </div>
@@ -67,13 +67,13 @@ const FAQ = () => {
                   className="flex items-center justify-between"
                   onClick={() => toggle2(i)}
                 >
-                  <h4 className="font-h4 max-w-[13.688rem] text-lg leading-6 tracking-[-0.8px] text-dark-navy">
+                  <h4 className="font-h4 max-w-[13.688rem] cursor-pointer text-lg leading-6 tracking-[-0.8px] text-dark-navy">
                     {item.question}
                   </h4>
                   <div
                     className={`${
                       selected2 === i ? "rotate-180" : ""
-                    } transition-[transform] duration-300 ease-in`}
+                    } cursor-pointer transition-[transform] duration-300 ease-in`}
                   >
                     <img src={chevronIcon} alt="" />
                   </div>
