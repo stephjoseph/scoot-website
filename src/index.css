@@ -49,6 +49,12 @@
     background-size: cover;
   }
 
+  #careers header {
+    background: url("./assets/images/careers-location-hero-mobile.jpg")
+      no-repeat center center;
+    background-size: cover;
+  }
+
   #CTA {
     background-image: url("./assets/patterns/semi-circles.svg");
     background-repeat: no-repeat;
