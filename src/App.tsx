@@ -5,6 +5,7 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Careers from "./components/Careers";
+import Locations from "./components/Locations";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/locations" element={<Locations />} />
         </Routes>
         <CTA />
         <Footer />
