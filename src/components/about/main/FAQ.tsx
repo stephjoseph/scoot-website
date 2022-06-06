@@ -33,7 +33,10 @@ const FAQ = () => {
           </h3>
           <div className="flex flex-col items-center gap-4">
             {data.faq1.map((item, i) => (
-              <div className="flex flex-col bg-snow p-8" key={item.id}>
+              <div
+                className="flex flex-col bg-snow p-8"
+                key={item.id.toString()}
+              >
                 <div
                   className="flex items-center justify-between"
                   onClick={() => toggle(i)}
@@ -62,7 +65,10 @@ const FAQ = () => {
           </h3>
           <div className="flex flex-col items-center gap-4">
             {data.faq2.map((item, i) => (
-              <div className="flex flex-col bg-snow p-8" key={item.id}>
+              <div
+                className="flex flex-col bg-snow p-8"
+                key={item.id.toString()}
+              >
                 <div
                   className="flex items-center justify-between"
                   onClick={() => toggle2(i)}
