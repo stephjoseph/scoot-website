@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import MobileNav from "./components/MobileNav";
 import Home from "./components/Home";
 import CTA from "./components/CTA";
@@ -24,17 +25,15 @@ function App() {
 
   return (
     <div className="App relative w-full">
-      <BrowserRouter>
-        {size.x < 768 && <MobileNav />}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/locations" element={<Locations />} />
-        </Routes>
-        <CTA />
-        <Footer />
-      </BrowserRouter>
+      {size.x < 768 && <MobileNav />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/locations" element={<Locations />} />
+      </Routes>
+      <CTA />
+      <Footer />
     </div>
   );
 }
