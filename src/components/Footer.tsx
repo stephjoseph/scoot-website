@@ -27,7 +27,7 @@ const Footer = () => {
             <li>
               <Link
                 className="font-body font-['Space_Mono'] text-dim-grey"
-                to="/location"
+                to="/locations"
               >
                 Location
               </Link>
