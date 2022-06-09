@@ -34,7 +34,12 @@ const MobileNav = () => {
           <img src={closeIcon} alt="" />
         </button>
         <Link
-          onClick={() => setisActive(false)}
+          onClick={() => {
+            setisActive(false);
+            window.scrollTo({
+              top: 0,
+            });
+          }}
           className="h-[1.25rem] w-[4.688rem] "
           to="/"
         >
