@@ -33,7 +33,11 @@ const MobileNav = () => {
         >
           <img src={closeIcon} alt="" />
         </button>
-        <Link className="h-[1.25rem] w-[4.688rem] " to="/">
+        <Link
+          onClick={() => setisActive(false)}
+          className="h-[1.25rem] w-[4.688rem] "
+          to="/"
+        >
           <img src={logo} alt="" />
         </Link>
       </div>
@@ -49,22 +53,22 @@ const MobileNav = () => {
         >
           <ul className="flex flex-col gap-6">
             <li>
-              <Link className="font-nav" to="/about">
+              <Link onClick={handleClick} className="font-nav" to="/about">
                 About
               </Link>
             </li>
             <li>
-              <Link className="font-nav" to="/locations">
+              <Link onClick={handleClick} className="font-nav" to="/locations">
                 Locations
               </Link>
             </li>
             <li>
-              <Link className="font-nav" to="/careers">
+              <Link onClick={handleClick} className="font-nav" to="/careers">
                 Careers
               </Link>
             </li>
           </ul>
-          <Link className="btn" to="">
+          <Link onClick={handleClick} className="btn" to="">
             Get Scootin
           </Link>
         </div>
