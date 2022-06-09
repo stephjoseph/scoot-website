@@ -1,5 +1,6 @@
+import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import MobileNav from "./components/MobileNav";
 import Home from "./components/Home";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
@@ -8,10 +9,23 @@ import Careers from "./components/Careers";
 import Locations from "./components/Locations";
 
 function App() {
+  const [size, setSize] = useState({
+    x: window.innerWidth,
+    y: window.innerHeight,
+  });
+
+  const updateSize = () =>
+    setSize({
+      x: window.innerWidth,
+      y: window.innerHeight,
+    });
+
+  useEffect(() => (window.onresize = updateSize), []);
+
   return (
-    <div className="App w-full">
+    <div className="App relative w-full">
       <BrowserRouter>
-        <Navbar />
+        {size.x < 768 && <MobileNav />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
