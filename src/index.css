@@ -29,6 +29,10 @@
     @apply font-['Lexend_Deca'] text-[0.938rem] leading-[1.563rem];
   }
 
+  .font-nav {
+    @apply font-['Space_Mono'] text-lg leading-[1.563rem] tracking-normal text-light-grey;
+  }
+
   .btn {
     @apply font-body flex h-[3.313rem] w-[11.25rem] items-center justify-center border-none bg-yellow font-['Space_Mono'] text-white transition-colors duration-300;
   }
@@ -76,5 +80,13 @@
 
   .answer.show {
     @apply h-auto max-h-[9999px] pt-6 opacity-100 transition-[max-height,_padding,_opacity] duration-[2s,_0.3s,_0.3s] ease-in;
+  }
+
+  .inactive-button {
+    @apply pointer-events-none scale-0 opacity-0;
+  }
+
+  .inactive-nav {
+    @apply pointer-events-none opacity-0;
   }
 }
