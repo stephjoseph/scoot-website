@@ -58,17 +58,29 @@ const MobileNav = () => {
         >
           <ul className="flex flex-col gap-6">
             <li>
-              <Link onClick={handleClick} className="font-nav" to="/about">
+              <Link
+                onClick={handleClick}
+                className="font-mobile-nav"
+                to="/about"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link onClick={handleClick} className="font-nav" to="/locations">
+              <Link
+                onClick={handleClick}
+                className="font-mobile-nav"
+                to="/locations"
+              >
                 Locations
               </Link>
             </li>
             <li>
-              <Link onClick={handleClick} className="font-nav" to="/careers">
+              <Link
+                onClick={handleClick}
+                className="font-mobile-nav"
+                to="/careers"
+              >
                 Careers
               </Link>
             </li>
