@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Careers from "./components/Careers";
 import Locations from "./components/Locations";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [size, setSize] = useState({
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App relative w-full">
       {size.x < 768 && <MobileNav />}
+      {size.x >= 768 && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
