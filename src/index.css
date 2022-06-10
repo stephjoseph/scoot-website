@@ -29,8 +29,12 @@
     @apply font-['Lexend_Deca'] text-[0.938rem] leading-[1.563rem];
   }
 
-  .font-nav {
+  .font-mobile-nav {
     @apply font-['Space_Mono'] text-lg leading-[1.563rem] tracking-normal text-light-grey;
+  }
+
+  .font-nav {
+    @apply font-['Space_Mono'] text-[0.938rem] leading-[1.563rem] tracking-normal text-dim-grey;
   }
 
   .btn {
@@ -70,6 +74,14 @@
     background-repeat: no-repeat;
     background-position: -37.938rem bottom;
     background-size: 72.063rem 10.844rem;
+  }
+
+  @media (min-width: 768px) {
+    #home header {
+      background: url("./assets/images/home-hero-tablet.jpg") no-repeat center
+        center;
+      background-size: cover;
+    }
   }
 }
 
