@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 
-import logo from "../assets/logo.svg";
-
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center bg-[#333A44] pt-16 pb-[5.5rem] text-center">
-      <div className="flex w-[32%] flex-col items-center gap-[5.313rem]">
-        <div className="flex flex-col items-center gap-10">
+    <footer className="flex flex-col items-center bg-[#333A44] pt-16 pb-[5.5rem] text-center tablet:items-start tablet:px-10 tablet:pb-8 tablet:pt-[2.188rem] ">
+      <div className="flex w-[32%] flex-col items-center gap-[5.313rem] tablet:w-[89.71%] tablet:flex-row tablet:gap-[9.5rem]">
+        <div className="flex flex-col items-center  gap-10 tablet:flex-row tablet:gap-[3.75rem]">
           <Link to="/">
             <svg xmlns="http://www.w3.org/2000/svg" width="108" height="29">
               <path
@@ -15,7 +13,7 @@ const Footer = () => {
               />
             </svg>
           </Link>
-          <ul className="flex flex-col items-center gap-4">
+          <ul className="flex flex-col items-center gap-4 tablet:flex-row">
             <li>
               <Link
                 className="font-body font-['Space_Mono'] text-dim-grey"
