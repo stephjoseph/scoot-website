@@ -73,7 +73,7 @@
     background-image: url("./assets/patterns/semi-circles.svg");
     background-repeat: no-repeat;
     background-position: -37.938rem bottom;
-    background-size: 72.063rem 10.844rem;
+    background-size: 72.063rem 10rem;
   }
 
   @media (min-width: 768px) {
@@ -81,6 +81,10 @@
       background: url("./assets/images/home-hero-tablet.jpg") no-repeat center
         center;
       background-size: cover;
+    }
+
+    #CTA {
+      background-position: -13.875rem bottom;
     }
   }
 }
