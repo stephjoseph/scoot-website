@@ -6,10 +6,10 @@ import googlePlaySmallIcon from "../assets/icons/google-play-small.svg";
 const CTA = () => {
   return (
     <section
-      className="flex w-full flex-col items-center gap-10 bg-dark-navy py-[5.5rem] text-center"
+      className="flex w-full flex-col items-center gap-10 bg-dark-navy py-[5.5rem] text-center tablet:py-[3.875rem]"
       id="CTA"
     >
-      <h2 className="w-[82.93%]  font-['Space_Mono'] text-[2rem] leading-[2rem] tracking-[-1.43px] text-white">
+      <h2 className="tablet:font-h2 w-[82.93%] font-['Space_Mono'] text-[2rem] leading-[2rem] tracking-[-1.43px] text-white tablet:max-w-[28.563rem]">
         Sign up and Scoot off today
       </h2>
       <div className="flex items-center gap-[0.813rem]">
