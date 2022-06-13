@@ -48,7 +48,7 @@ const Features = () => {
           <div>
             <img className="rounded-full" src={nearYouImg} alt="" />
           </div>
-          <div className="absolute  top-0 -left-[31.563rem] tablet:-left-[550px]">
+          <div className="absolute  top-0 -left-[31.563rem] z-10 tablet:-left-[550px]">
             <img className="h-full w-full" src={rightDownwardArrow} alt="" />
           </div>
           <div className="absolute top-0 -left-[509px] hidden tablet:block">
