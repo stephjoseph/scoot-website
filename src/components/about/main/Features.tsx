@@ -23,7 +23,7 @@ const Features = () => {
           </div>
         </div>
         <div className='flex flex-col items-center gap-8 tablet:gap-10'>
-          <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy'>
+          <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy tablet:max-w-[28.563rem]'>
             Mobility for the digital era
           </h2>
           <p className='font-body text-dim-grey'>
@@ -38,7 +38,7 @@ const Features = () => {
           <div>
             <img className='rounded-full' src={betterLivingImg} alt='' />
           </div>
-          <div className='absolute top-0 right-0 w-[45.938rem] tablet:-left-[550px]'>
+          <div className='absolute top-0 right-0 z-10 w-[45.938rem] tablet:-left-[550px]'>
             <img className='absolute' src={rightDownwardArrow} alt='' />
           </div>
           <div className='absolute top-0 -left-[509px] hidden tablet:block'>
@@ -46,7 +46,7 @@ const Features = () => {
           </div>
         </div>
         <div className='flex flex-col items-center gap-8 tablet:gap-10'>
-          <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy'>
+          <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy tablet:max-w-[28.563rem]'>
             Better urban <br className='hidden tablet:inline' /> living
           </h2>
           <p className='font-body text-dim-grey'>
