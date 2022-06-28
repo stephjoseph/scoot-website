@@ -89,6 +89,12 @@
       background-size: cover;
     }
 
+    #careers header {
+      background: url('./assets/images/careers-locations-hero-tablet.jpg')
+        no-repeat center center;
+      background-size: cover;
+    }
+
     #CTA {
       background-position: -13.875rem bottom;
     }
