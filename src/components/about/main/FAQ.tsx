@@ -34,7 +34,7 @@ const FAQ = () => {
           <div className='flex flex-col items-center gap-4 tablet:gap-6'>
             {data.faq1.map((item, i) => (
               <div
-                className='flex flex-col bg-snow p-8'
+                className='flex w-full flex-col bg-snow p-8'
                 key={item.id.toString()}
               >
                 <div
