@@ -105,6 +105,14 @@
       background-position: -13.875rem bottom;
     }
   }
+
+  @media (min-width: 1440px) {
+    #home header {
+      background: url('./assets/images/home-hero-desktop.jpg') no-repeat center
+        center;
+      background-size: cover;
+    }
+  }
 }
 
 @layer utilities {
