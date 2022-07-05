@@ -4,7 +4,7 @@ import whiteCircles from '../../assets/patterns/white-circles.svg';
 
 const Header = () => {
   return (
-    <header className='relative mb-[7.5rem] flex w-full items-center justify-center pt-[7.188rem] pb-[11.188rem] text-center tablet:pb-[13.563rem] tablet:pt-[8.5rem] desktop:justify-start desktop:py-[9.563rem] desktop:pl-[10.313rem] desktop:text-left'>
+    <header className='relative mb-[7.5rem] flex w-full items-center justify-center pt-[7.188rem] pb-[11.188rem] text-center tablet:pb-[13.563rem] tablet:pt-[8.5rem] desktop:mb-40 desktop:justify-start desktop:py-[9.563rem] desktop:pl-[10.313rem] desktop:text-left'>
       <div className='flex max-w-[19.438rem] flex-col items-center gap-8 tablet:max-w-[35.813rem] desktop:max-w-[31.25rem] desktop:items-start desktop:gap-10'>
         <div className='flex flex-col items-center gap-6 desktop:gap-10'>
           <h1 className='font-h3 tablet:font-h1 text-white'>
