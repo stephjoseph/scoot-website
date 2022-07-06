@@ -112,6 +112,10 @@
         center;
       background-size: cover;
     }
+
+    #CTA {
+      background-position: 28.125rem bottom;
+    }
   }
 }
 
