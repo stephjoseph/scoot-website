@@ -9,8 +9,8 @@ import circle from '../../../assets/patterns/circle.svg';
 
 const Features = () => {
   return (
-    <section className='flex w-[82.93%] flex-col items-center gap-[7.5rem] tablet:w-[74.60%]'>
-      <div className='flex flex-col items-center gap-14 text-center'>
+    <section className='flex w-[82.93%] flex-col items-center gap-[7.5rem] text-center tablet:w-[74.60%] desktop:w-[77.08%] desktop:gap-40 desktop:text-left'>
+      <div className='flex flex-col items-center gap-14 desktop:flex-row-reverse desktop:gap-[13.75rem]'>
         <div className='relative'>
           <div>
             <img className='rounded-full' src={digitalEraImg} alt='' />
@@ -22,8 +22,8 @@ const Features = () => {
             <img src={circle} alt='' />
           </div>
         </div>
-        <div className='flex flex-col items-center gap-8 tablet:gap-10'>
-          <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy tablet:max-w-[28.563rem]'>
+        <div className='flex flex-col items-center gap-8 tablet:gap-10 desktop:w-[40.09%] desktop:items-start'>
+          <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy tablet:max-w-[28.563rem] desktop:items-start desktop:gap-6'>
             Mobility for the digital era
           </h2>
           <p className='font-body text-dim-grey'>
@@ -33,7 +33,7 @@ const Features = () => {
           </p>
         </div>
       </div>
-      <div className='flex flex-col items-center gap-14 text-center'>
+      <div className='flex flex-col items-center gap-14 text-center desktop:flex-row desktop:gap-[13.75rem] desktop:text-left'>
         <div className='relative'>
           <div>
             <img className='rounded-full' src={betterLivingImg} alt='' />
@@ -45,8 +45,8 @@ const Features = () => {
             <img src={circle} alt='' />
           </div>
         </div>
-        <div className='flex flex-col items-center gap-8 tablet:gap-10'>
-          <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy tablet:max-w-[28.563rem]'>
+        <div className='flex flex-col items-center gap-8 tablet:gap-10 desktop:w-[40.09%] desktop:items-start'>
+          <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy tablet:max-w-[28.563rem] '>
             Better urban <br className='hidden tablet:inline' /> living
           </h2>
           <p className='font-body text-dim-grey'>
