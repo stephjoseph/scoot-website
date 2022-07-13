@@ -113,6 +113,12 @@
       background-size: cover;
     }
 
+    #about header {
+      background: url('./assets/images/about-hero-desktop.jpg') no-repeat center
+        center;
+      background-size: cover;
+    }
+
     #CTA {
       background-position: 28.125rem bottom;
     }
