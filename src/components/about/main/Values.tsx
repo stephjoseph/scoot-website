@@ -4,11 +4,11 @@ import ourCommunityImg from '../../../assets/images/our-community.jpg';
 
 const Values = () => {
   return (
-    <section className='flex w-[82.93%] flex-col items-center gap-16 tablet:w-[59.50%] tablet:gap-[6.563rem]'>
+    <section className='flex w-[82.93%] flex-col items-center gap-16 tablet:w-[59.50%] tablet:gap-[6.563rem] desktop:w-[77.08%] desktop:gap-12'>
       <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] text-dark-navy'>
         Our values
       </h2>
-      <div className='flex flex-col items-center gap-14 text-center'>
+      <div className='flex flex-col items-center gap-14 text-center desktop:flex-row desktop:gap-[1.875rem]'>
         <div className='flex flex-col items-center gap-4 tablet:gap-8'>
           <div className='flex flex-col items-center'>
             <div className='flex flex-col items-center'>
