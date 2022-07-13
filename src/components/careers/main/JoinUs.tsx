@@ -9,7 +9,7 @@ import circle from '../../../assets/patterns/circle.svg';
 
 const JoinUs = () => {
   return (
-    <section className='mb-[7.5rem] flex w-[82.93%] flex-col items-center gap-14 tablet:w-[74.60%] tablet:gap-16'>
+    <section className='mb-[7.5rem] flex w-[82.93%] flex-col items-center gap-14 text-center tablet:w-[74.60%] tablet:gap-16 desktop:flex-row-reverse desktop:gap-[13.75rem] desktop:text-left'>
       <div className='relative'>
         <div>
           <img className='rounded-full' src={joinUsImg} alt='' />
@@ -21,8 +21,8 @@ const JoinUs = () => {
           <img src={circle} alt='' />
         </div>
       </div>
-      <div className='flex flex-col items-center gap-8 text-center tablet:gap-10'>
-        <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy'>
+      <div className='flex flex-col items-center gap-8 tablet:gap-10 desktop:w-[40.09%] desktop:items-start'>
+        <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy desktop:items-start desktop:gap-6'>
           Care to join our mission?
         </h2>
         <p className='font-body text-dim-grey'>
