@@ -22,7 +22,7 @@ const Features = () => {
             <img src={circle} alt='' />
           </div>
         </div>
-        <div className='flex flex-col items-center gap-8 tablet:gap-10 desktop:w-[40.09%] desktop:items-start'>
+        <div className='flex flex-col items-center gap-8 tablet:gap-10 desktop:w-[40.09%] desktop:items-start desktop:text-left'>
           <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] tracking-[-1.43px] text-dark-navy tablet:max-w-[28.563rem] desktop:items-start desktop:gap-6'>
             Mobility for the digital era
           </h2>
