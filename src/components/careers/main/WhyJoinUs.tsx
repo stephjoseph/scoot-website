@@ -4,12 +4,12 @@ import ourCommunityImg from '../../../assets/images/our-community.jpg';
 
 const Values = () => {
   return (
-    <section className='mb-[9.063rem] flex w-[82.93%] flex-col items-center gap-16 tablet:mb-[7.5rem] tablet:w-[59.50%] tablet:gap-[6.563rem]'>
+    <section className='mb-[9.063rem] flex w-[82.93%] flex-col items-center gap-16 tablet:mb-[7.5rem] tablet:w-[59.50%] tablet:gap-[6.563rem] desktop:w-[77.08%] desktop:gap-12'>
       <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] text-dark-navy'>
-        Why Join Us
+        Our values
       </h2>
-      <div className='flex flex-col items-center gap-14 text-center'>
-        <div className='flex flex-col items-center gap-4 tablet:gap-8'>
+      <div className='flex flex-col items-center gap-14 text-center desktop:flex-row desktop:gap-[1.875rem]'>
+        <div className='flex flex-col items-center gap-4 tablet:gap-8 desktop:w-[31.53%]'>
           <div className='flex flex-col items-center'>
             <div className='flex flex-col items-center'>
               <div>
@@ -31,7 +31,7 @@ const Values = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col items-center gap-4 tablet:gap-8'>
+        <div className='flex flex-col items-center gap-4 tablet:gap-8 desktop:w-[31.53%]'>
           <div className='flex flex-col items-center'>
             <div className='flex flex-col items-center'>
               <div>
@@ -52,7 +52,7 @@ const Values = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col items-center gap-4 tablet:gap-8'>
+        <div className='flex flex-col items-center gap-4 tablet:gap-8 desktop:w-[31.53%]'>
           <div className='flex flex-col items-center'>
             <div className='flex flex-col items-center'>
               <div>
