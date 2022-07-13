@@ -119,6 +119,18 @@
       background-size: cover;
     }
 
+    #careers header {
+      background: url('./assets/images/careers-locations-hero-desktop.jpg')
+        no-repeat center center;
+      background-size: cover;
+    }
+
+    #locations header {
+      background: url('./assets/images/careers-locations-hero-desktop.jpg')
+        no-repeat center center;
+      background-size: cover;
+    }
+
     #CTA {
       background-position: 28.125rem bottom;
     }
