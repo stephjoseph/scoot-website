@@ -34,7 +34,7 @@
   }
 
   .font-nav {
-    @apply font-['Space_Mono'] text-[0.938rem] leading-[1.563rem] tracking-normal text-dim-grey;
+    @apply font-['Space_Mono'] text-[0.938rem] leading-[1.563rem] tracking-normal text-dim-grey hover:text-yellow;
   }
 
   .btn {
