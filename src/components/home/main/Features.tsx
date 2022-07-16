@@ -211,7 +211,7 @@ const Features = () => {
             <img className='rounded-full' src={paymentsImg} alt='' />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 300 }}
+            initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
