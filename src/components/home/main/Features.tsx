@@ -19,7 +19,7 @@ const Features = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
-              duration: 1,
+              duration: 1.5,
               bounce: 0.3,
               delay: 0.15,
             }}
@@ -32,7 +32,7 @@ const Features = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
-              duration: 1,
+              duration: 1.5,
               bounce: 0.3,
               delay: 0.3,
             }}
@@ -70,7 +70,7 @@ const Features = () => {
             whileInView={{ opacity: 1, right: -509 }}
             transition={{
               type: 'spring',
-              duration: 1,
+              duration: 1.5,
               bounce: 0.3,
               delay: 0,
             }}
@@ -83,7 +83,7 @@ const Features = () => {
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: 'spring', duration: 1, bounce: 0.3 }}
+          transition={{ type: 'spring', duration: 1.5, bounce: 0.3 }}
           viewport={{ once: true }}
           className='flex flex-col items-center gap-8 tablet:gap-10 desktop:w-[40.09%] desktop:items-start'
         >
@@ -111,7 +111,7 @@ const Features = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
-              duration: 1,
+              duration: 1.5,
               bounce: 0.3,
               delay: 0.15,
             }}
@@ -124,7 +124,7 @@ const Features = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
-              duration: 1,
+              duration: 1.5,
               bounce: 0.3,
               delay: 0.3,
             }}
@@ -167,14 +167,25 @@ const Features = () => {
               />
             </svg>
           </motion.div>
-          <div className='absolute top-0 -left-[509px] hidden tablet:block'>
+          <motion.div
+            initial={{ opacity: 0, right: -600 }}
+            whileInView={{ opacity: 1, right: -509 }}
+            transition={{
+              type: 'spring',
+              duration: 1.5,
+              bounce: 0.3,
+              delay: 0,
+            }}
+            viewport={{ once: true }}
+            className='absolute top-0 -left-[509px] hidden tablet:block'
+          >
             <img src={circle} alt='' />
-          </div>
+          </motion.div>
         </div>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: 'spring', duration: 1, bounce: 0.3 }}
+          transition={{ type: 'spring', duration: 1.5, bounce: 0.3 }}
           viewport={{ once: true }}
           className='flex flex-col items-center gap-8 tablet:gap-10 desktop:w-[40.09%] desktop:items-start'
         >
@@ -202,7 +213,7 @@ const Features = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
-              duration: 1,
+              duration: 1.5,
               bounce: 0.3,
               delay: 0.15,
             }}
@@ -215,7 +226,7 @@ const Features = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
-              duration: 1,
+              duration: 1.5,
               bounce: 0.3,
               delay: 0.3,
             }}
@@ -253,7 +264,7 @@ const Features = () => {
             whileInView={{ opacity: 1, right: -509 }}
             transition={{
               type: 'spring',
-              duration: 1,
+              duration: 1.5,
               bounce: 0.3,
               delay: 0,
             }}
@@ -266,7 +277,7 @@ const Features = () => {
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ type: 'spring', duration: 1, bounce: 0.3 }}
+          transition={{ type: 'spring', duration: 1.5, bounce: 0.3 }}
           viewport={{ once: true }}
           className='flex flex-col items-center gap-8 tablet:gap-10 desktop:w-[40.09%] desktop:items-start'
         >

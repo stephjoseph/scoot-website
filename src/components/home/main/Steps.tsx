@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+
+// icons
 import locateIcon from '../../../assets/icons/locate.svg';
 import scooterIcon from '../../../assets/icons/scooter.svg';
 import rideIcon from '../../../assets/icons/ride.svg';
@@ -5,8 +8,19 @@ import rideIcon from '../../../assets/icons/ride.svg';
 const Steps = () => {
   return (
     <section className='relative z-10 flex w-[82.93%] flex-col items-center gap-12 tablet:w-[74.60%] tablet:max-w-[50rem] tablet:gap-10 desktop:w-[77.08%] desktop:max-w-[90rem] desktop:flex-row desktop:items-start desktop:gap-[1.875rem]'>
-      <div className='absolute top-[129px] left-[-208px] -z-10 hidden h-4 w-[32.063rem] rotate-90 bg-light-grey tablet:block desktop:top-[2.563rem] desktop:w-[87.66%] desktop:rotate-0'></div>
-      <div className='flex flex-col items-center gap-6 text-center tablet:flex-row tablet:items-start tablet:gap-20 tablet:text-left desktop:w-[31.53%] desktop:flex-col desktop:gap-10'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ type: 'linear', duration: 1.5, bounce: 0.3, delay: 1.5 }}
+        className='absolute top-[129px] left-[-208px] -z-10 hidden h-4 w-[32.063rem] rotate-90 bg-light-grey tablet:block desktop:top-[2.563rem] desktop:w-[87.66%] desktop:rotate-0'
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: 'spring', duration: 1.5, bounce: 0.3, delay: 0 }}
+        viewport={{ once: true }}
+        className='flex flex-col items-center gap-6 text-center tablet:flex-row tablet:items-start tablet:gap-20 tablet:text-left desktop:w-[31.53%] desktop:flex-col desktop:gap-10'
+      >
         <div className='h-[3.5rem] w-[3.5rem] tablet:h-[6rem] tablet:w-[6rem]'>
           <img className='w-full' src={locateIcon} alt='' />
         </div>
@@ -20,8 +34,14 @@ const Steps = () => {
             be too far away.
           </p>
         </div>
-      </div>
-      <div className='flex flex-col items-center gap-6 text-center tablet:flex-row tablet:items-start tablet:gap-20 tablet:text-left desktop:w-[31.53%] desktop:flex-col desktop:gap-10'>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: 'spring', duration: 1.5, bounce: 0.3, delay: 1 }}
+        viewport={{ once: true }}
+        className='flex flex-col items-center gap-6 text-center tablet:flex-row tablet:items-start tablet:gap-20 tablet:text-left desktop:w-[31.53%] desktop:flex-col desktop:gap-10'
+      >
         <div className='h-[3.5rem] w-[3.5rem] tablet:h-[6rem] tablet:w-[6rem]'>
           <img className='w-full' src={scooterIcon} alt='' />
         </div>
@@ -35,8 +55,14 @@ const Steps = () => {
             it will cost.
           </p>
         </div>
-      </div>
-      <div className='flex flex-col items-center gap-6 text-center tablet:flex-row tablet:items-start tablet:gap-20 tablet:text-left desktop:w-[31.53%] desktop:flex-col desktop:gap-10'>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: 'spring', duration: 1.5, bounce: 0.3, delay: 1.5 }}
+        viewport={{ once: true }}
+        className='flex flex-col items-center gap-6 text-center tablet:flex-row tablet:items-start tablet:gap-20 tablet:text-left desktop:w-[31.53%] desktop:flex-col desktop:gap-10'
+      >
         <div className='h-[3.5rem] w-[3.5rem] tablet:h-[6rem] tablet:w-[6rem]'>
           <img className='w-full' src={rideIcon} alt='' />
         </div>
@@ -50,7 +76,7 @@ const Steps = () => {
             walkways and accessibility ramps.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

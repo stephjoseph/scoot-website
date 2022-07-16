@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+
+// images
 import ourTechImg from '../../../assets/images/our-tech.jpg';
 import ourIntegrityImg from '../../../assets/images/our-integrity.jpg';
 import ourCommunityImg from '../../../assets/images/our-community.jpg';
@@ -5,11 +8,23 @@ import ourCommunityImg from '../../../assets/images/our-community.jpg';
 const Values = () => {
   return (
     <section className='flex w-[82.93%] flex-col items-center gap-16 tablet:w-[59.50%] tablet:gap-[6.563rem] desktop:w-[77.08%] desktop:gap-12'>
-      <h2 className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] text-dark-navy'>
+      <motion.h2
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ type: 'spring', duration: 1, bounce: 0.3 }}
+        viewport={{ once: true }}
+        className='font-h2 tablet:font-h2 text-[2rem] leading-[2rem] text-dark-navy'
+      >
         Our values
-      </h2>
+      </motion.h2>
       <div className='flex flex-col items-center gap-14 text-center desktop:flex-row desktop:gap-[1.875rem]'>
-        <div className='flex flex-col items-center gap-4 tablet:gap-8'>
+        <motion.div
+          initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+          viewport={{ once: true }}
+          className='flex flex-col items-center gap-4 tablet:gap-8'
+        >
           <div className='flex flex-col items-center'>
             <div className='flex flex-col items-center'>
               <div>
@@ -30,8 +45,14 @@ const Values = () => {
               ride!
             </p>
           </div>
-        </div>
-        <div className='flex flex-col items-center gap-4 tablet:gap-8'>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.3, delay: 0.3 }}
+          viewport={{ once: true }}
+          className='flex flex-col items-center gap-4 tablet:gap-8'
+        >
           <div className='flex flex-col items-center'>
             <div className='flex flex-col items-center'>
               <div>
@@ -51,8 +72,14 @@ const Values = () => {
               micro-mobility experience in every city we serve.
             </p>
           </div>
-        </div>
-        <div className='flex flex-col items-center gap-4 tablet:gap-8'>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.3, delay: 0.6 }}
+          viewport={{ once: true }}
+          className='flex flex-col items-center gap-4 tablet:gap-8'
+        >
           <div className='flex flex-col items-center'>
             <div className='flex flex-col items-center'>
               <div>
@@ -72,7 +99,7 @@ const Values = () => {
               wage based on their location and are Scoot employees.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
